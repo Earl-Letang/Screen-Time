@@ -1,2 +1,2 @@
 # Screen-Time
-The research question for this project is: Over time, how many people are spending time on their devices? I want to find out how many people are using their phones over the years from the 1900s to now.
+The research question for this project is: Is the amount of time I study related to daily screen time? I want to find out if my screen time is related to the amount of time I study for my classes.
