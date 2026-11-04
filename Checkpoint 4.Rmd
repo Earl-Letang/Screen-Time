@@ -1,0 +1,28 @@
+---
+title: "Checkpoint 3"
+author: "Earl Letang"
+date: "2026-10-27"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Checkpoint 3 Q3
+```{r}
+library(ggplot2)
+library(readxl)
+Screen_Time_and_Time_Spent_Studying <- read_excel("~/DATA 211/Excel Files/Screen Time and Time Spent Studying.xlsx")
+View(Screen_Time_and_Time_Spent_Studying)
+```
+
+```{r}
+ggplot(data=Screen_Time_and_Time_Spent_Studying,aes(x=Screen_Time,y=Time_Spent_Studying))+
+  geom_point(color="red")+
+  geom_smooth(method="lm",se=TRUE,linetype="dashed")+
+  labs(x="Screen Time",y="Time Spent Studying",title="Relationship between Screen Time and Time Spent Studying")
+```
+
