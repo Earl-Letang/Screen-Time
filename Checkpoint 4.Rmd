@@ -20,9 +20,10 @@ View(Screen_Time_and_Time_Spent_Studying)
 ```
 
 ```{r}
-ggplot(data=Screen_Time_and_Time_Spent_Studying,aes(x=Screen_Time,y=Time_Spent_Studying))+
+p<-ggplot(data=Screen_Time_and_Time_Spent_Studying,aes(x=Screen_Time,y=Time_Spent_Studying))+
   geom_point(color="red")+
   geom_smooth(method="lm",se=TRUE,linetype="dashed")+
   labs(x="Screen Time",y="Time Spent Studying",title="Relationship between Screen Time and Time Spent Studying")
+p
 ```
 
